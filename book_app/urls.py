@@ -9,5 +9,5 @@ router.register(r'books', views.BookViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('', include('rest_framework.urls', namespace='rest_framework'))
+    #path('', include('rest_framework.urls', namespace='rest_framework'))
 ]
