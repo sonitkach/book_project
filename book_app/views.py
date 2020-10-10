@@ -1,6 +1,4 @@
-from rest_framework import viewsets
-from rest_framework import mixins
-from rest_framework import generics
+from rest_framework import viewsets, mixins, generics
 
 from book_app.models import Book
 from book_app.serializers import BookSerializer
@@ -26,4 +24,3 @@ class BookViewSet(  viewsets.GenericViewSet,
 
     def delete(self, request, id=None):
         return self.destroy(request, id)
-
