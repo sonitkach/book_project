@@ -19,8 +19,8 @@ class BookViewSet(  viewsets.GenericViewSet,
     def post(self, request):
         return self.create(request)
 
-    def put(self, request, id=None):
+    def put(self, request):
         return self.update(request, id)
 
-    def delete(self, request, id=None):
+    def delete(self, request):
         return self.destroy(request, id)
